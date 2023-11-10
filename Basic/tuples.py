@@ -51,3 +51,4 @@ print(tuple3)
 
 tuple3=tuple3*3;
 print(tuple3)
+# just like list count() and index() are tuple methods
