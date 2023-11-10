@@ -68,3 +68,50 @@ for i in thislist:
 
 #list comprehensions : List Comprehension offers the shortest syntax for looping through lists:
 [print(x) for x in thislist]
+[print(x) for x in thislist if "a" in x]
+
+#newlist = [expression for item in iterable if condition == True]
+l1=[1,2,3,4,5]
+############################
+#  sort
+##########################
+l1.sort(reverse=True)
+print(l1)
+l1.sort()
+print(l1)
+
+#customized sort
+def mysort(n):
+  return abs(n)
+
+li3=[70,-70,-80,80,50,-40]#stable 
+#li3.sort(key=mysort)
+#li3.sort(key=mysort,reverse=True)
+li3.reverse()
+print(li3)
+# sort() method is case sensitive, to make it insensitive thislist.sort(key = str.lower)
+#######################################
+#   copy list
+################################################
+# method 1
+# cp=li3.copy()
+# print(cp)
+#method 2
+cp=list(li3)
+print(cp)
+
+#################################################
+# join list
+#############################################
+# 1. append()
+# 2. extend()
+# 3. +
+################################################
+cp=cp+li3
+cp.append(70)
+print(cp)
+print(cp.count(70))# count method returns count of element
+#############################################
+# index
+##################################################
+print(cp.index(70))
